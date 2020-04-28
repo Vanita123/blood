@@ -1,0 +1,34 @@
+p.a1
+{
+	text-shadow: 6px 5px 5px #00339F;
+	font-family:Verdana;
+	font-variant:small-caps;
+	font-size:40px;
+	color:#003399;
+	text-decoration:overline underline;
+}
+
+div.home
+{
+	background-color:yellow;
+}
+
+div.des
+{
+	background-color:#ff751a;	
+}
+
+p.s1,p.s2
+{
+	text-shadow: 6px 5px 5px #00FF00;
+	font-family:Verdana;
+	font-variant:small-caps;
+	font-size:25px;
+	color:#003399;
+}
+
+.copyright{
+  position: fixed;
+    bottom: 0;
+	right:0;
+}

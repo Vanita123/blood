@@ -1,0 +1,89 @@
+body{
+	text-align:center;
+	background-color:#b3ffff;
+}
+
+p{
+	color:#0000FF;
+	font-size:20px;
+}
+
+a
+{
+	color:green;
+	font-family:Verdana,"Times New Roman";
+	font-style:italic;
+}
+
+input
+{
+	width:400px 100px;
+}
+
+p.small{
+	color:blue;
+	font-family:Georgia;
+	font-style:italic;
+	font-size:65px;
+	text-shadow: 8px 8px 6px gray;
+	text-decoration:underline;
+
+}
+
+h3{
+	color:purple;
+	font-variant:small-caps;
+	font-size:30px;
+}
+
+p.anch{
+	background-color:#b3d9ff;
+}
+	
+/*for page 1 above*/
+
+body.reg{
+	background-color:#cc99ff;
+}
+
+.id
+{
+	color:#ffff66;
+}
+
+p.regg{
+	text-shadow: 8px 8px 6px #003399;
+	font-family:Verdana;
+	font-variant:small-caps;
+	font-size:38px;
+	color:#003399;
+	text-decoration:overline underline;
+
+}
+
+/*for registration page*/
+
+body.feed{
+	text-align:center;
+	color:#66ffff;	
+}
+
+.f1{
+	text-shadow: 8px 8px 6px #003399;
+	font-family:Verdana;
+	font-variant:small-caps;
+	font-size:38px;
+	color:#003399;
+	text-decoration:overline underline;
+}
+
+g{
+	color:black;
+	background-color:#00cc66;
+}
+
+j{
+	font-family:Verdana;
+	font-style:bold;
+}
+

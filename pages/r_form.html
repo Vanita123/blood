@@ -1,0 +1,131 @@
+<html>
+
+<head>
+	<title>REGISTER NOW</title>
+	<link rel="stylesheet" href="exp.css">
+
+	<script>
+	function validate()
+	{
+		var n1=document.getElementById("num1").value;
+		var n2=document.getElementById("num2").value;
+		var n3=document.getElementById("nam").value;
+		var n4=document.getElementById("em").value;
+		var n5=document.getElementById("phone").value;
+
+		var reg=/^[a-zA-Z0-9.!#%&*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)/;
+		if(reg.test(n4))
+		{
+			alert("Email accepted");
+
+		}
+		else
+		{
+			alert("Please enter a valid Email-ID");
+			return false;
+		}
+
+		var reg1=/^\d{10}$/;
+		if(reg1.test(n5))
+		{
+			alert("Contact No. Accepted");
+		}
+		else
+		{
+			alert("Please enter a valid contact no. ");
+			return false;
+		}
+
+		if(n1=="")
+		{
+			alert("Please enter you Password");
+			return false;
+		}
+
+		if(n2=="")
+		{
+			alert("Please confirm your password");
+			return false;
+		}
+
+		if(n1!=n2)
+		{
+
+			alert("Passwords do not match");
+			return false;
+		}
+		alert("LOGIN SUCCESSFUL !");
+		return true;
+	}
+	</script>
+
+	<!--<style>
+	p
+	{
+		text-align:center;
+		font-size:40px;
+		color:red;
+	}
+	</style>-->
+</head>
+
+<body align="center" bgcolor="#000033">
+
+	<div class="nav-bar">
+	<ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333;">
+	<li style="float: left; border-right: 1px solid #bbb; text-align:center;"><a href="aboutus.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">About</a></li>
+	<li style="float: left; border-right: 1px solid #bbb; text-align:center;"><a href="index.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Home</a></li>
+	<li style="float: left; border-right: 1px solid #bbb; text-align:center;"><a href="login.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Login</a></li>
+	<li style="float: left; border-right: 1px solid #bbb; text-align:center;"><a href="r_form.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Sign-up</a></li>
+	<li style="float: left; border-right: 1px solid #bbb; text-align:center;"><a href="help.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Help</a></li>
+	<li style="float:right"><a href="index.html" style="display: block; color: yellow; text-align: center; padding: 14px 16px; text-decoration: none;">Logout</a></li>
+	</ul>
+	</div>
+
+
+	<div class="b1">
+	<p align="center"><b>REGISTER NOW !</b></p>
+	<hr width="75%" size="10px"/>
+	</div>
+
+	<div class="b2">
+	<br/>
+
+	<form onsubmit="return validate()" action="donor.php" method="POST">
+
+	<b>NAME :</b> <input type="text" name="fname" id="nam" placeholder="John Stein" required><br/><br/>
+
+	<b><i>GENDER : </i></b><br/>
+	<input type="radio" value="Male" name="gender" required> <strong>Male</strong><br/>
+	<input type="radio" value="Female" name="gender" required> <strong>Female</strong><br/><br/>
+
+
+	<b><i>BLOOD GROUP : </i></b><br/>
+	<input type="radio" value="A+" name="blood" required>A+<br/>
+	<input type="radio" value="A-" name="blood" required>A-<br/>
+	<input type="radio" value="B+" name="blood" required>B+<br/>
+	<input type="radio" value="B-" name="blood" required>B-<br/>
+	<input type="radio" value="O+" name="blood" required>O+<br/>
+	<input type="radio" value="O-" name="blood" required>O-<br/>
+	<input type="radio" value="AB+" name="blood" required>AB+<br/>
+	<input type="radio" value="AB-" name="blood" required>AB-<br/>
+	<br/><br/>
+
+	<b>ADDRESS</b> : <textarea name="addr" type="text" width="100" height="100" required></textarea><br/><br/>
+
+	<b>CONTACT NO. : </b> <input type="text" name="number" id="phone"/><br/><br/>
+
+	<b>EMAIL-ID :</b> <input type="text" id="em" name="email" placeholder="Jack123@example.com"/><br/><br/>
+
+	<b>PASSWORD :</b> <input type="password" name="num1" id="num1"/><br/><br/>
+
+	<b>CONFIRM PASSWORD :</b> <input type="password" name="num2" id="num2"/><br/><br/>
+
+	<input id="subb" type="submit" value="LOGIN"/>
+	<input type="reset" value="RESET"/>
+
+	</form>
+</div>
+</body>
+
+</html>
